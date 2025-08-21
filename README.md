@@ -1,5 +1,5 @@
-<!-- 宇宙主题扁片横幅图片 -->
-<img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=80" alt="cosmos banner" style="width:100%; max-height:180px; object-fit:cover; border-radius: 10px;" />
+<!-- 宇宙主题超扁横幅图片 -->
+<img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=80" alt="cosmos banner" style="width:100%; max-height:60px; object-fit:cover; border-radius: 10px;" />
 
 # Hi there 👋 你好，我是 lunina8403！
 
@@ -28,4 +28,40 @@
   <img src="https://img.shields.io/badge/-Markdown-000000?logo=markdown&logoColor=white" />
   <img src="https://img.shields.io/badge/-Git-181717?logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/-VS%20Code-007ACC?logo=visual-studio-code&logoColor=white" />
-  <img src="
+  <img src="https://img.shields.io/badge/-Open%20Source-3DA639?logo=github&logoColor=white" />
+</p>
+
+---
+
+## 📈 我的 GitHub 数据
+
+<p>
+  <img src="https://github-readme-stats.vercel.app/api?username=lunina8403&show_icons=true&theme=radical" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lunina8403&theme=radical" width="48%" />
+</p>
+
+---
+
+## 🌟 近期关注
+
+- 🚀 欢迎和我一起参与开源项目
+- 💬 喜欢交流技术、分享有趣的想法
+- 🌍 期待认识更多志同道合的小伙伴！
+
+---
+
+## 📫 联系方式
+
+- 📧 邮箱：3806215449@qq.com
+
+---
+
+## ✨ 个性签名
+
+> “心有三千大世界，做好一个平常人” 🌱
+
+---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=37B6FF&height=100&section=footer"/>
+</p>
