@@ -1,5 +1,4 @@
-<!-- 宇宙主题超扁横幅图片 -->
-<img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=80" alt="cosmos banner" style="width:100%; max-height:60px; object-fit:cover; border-radius: 10px;" />
+<img src="https://raw.githubusercontent.com/maoshuyao/imgbed/master/github-banner/universe-banner-1200x60.jpg" alt="cosmos banner" />
 
 # Hi there 👋 你好，我是 lunina8403！
 
