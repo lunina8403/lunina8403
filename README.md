@@ -1,4 +1,4 @@
-<img src="https://ryu-fellow.org/cms/wp-content/uploads/2020/05/Astronomy-1100x400.jpg" alt="cosmos banner" />
+1| <img src="https://ryu-fellow.org/cms/wp-content/uploads/2020/05/Astronomy-1100x400.jpg" alt="cosmos banner" />
 
 # Hi there 👋 你好，我是 lunina8403！
 
@@ -23,7 +23,7 @@
 
 ## 🌐 语言 / Languages
 
-中文 🇨🇳, English 🇺🇸, Deutsch 🇩🇪, 日本語 🇯🇵
+中文 🇨🇳 | English 🇺🇸 | Deutsch 🇩🇪 | 日本語 🇯🇵
 
 ---
 
