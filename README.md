@@ -1,4 +1,4 @@
-1| <img src="https://ryu-fellow.org/cms/wp-content/uploads/2020/05/Astronomy-1100x400.jpg" alt="cosmos banner" />
+ <img src="https://ryu-fellow.org/cms/wp-content/uploads/2020/05/Astronomy-1100x400.jpg" alt="cosmos banner" />
 
 # Hi there 👋 你好，我是 lunina8403！
 
