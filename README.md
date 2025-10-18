@@ -23,7 +23,7 @@
 
 ## 🌐 语言 / Languages
 
-🇨🇳 中文, 🇺🇸 English, 🇩🇪 Deutsch, 🇯🇵 日本語
+中文 🇨🇳, English 🇺🇸, Deutsch 🇩🇪, 日本語 🇯🇵
 
 ---
 
