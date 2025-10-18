@@ -5,6 +5,7 @@
 <p>
   <img src="https://img.shields.io/badge/Role-Student-34d058?style=flat-square" />
   <img src="https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=fff&style=flat-square" />
+  <img src="https://img.shields.io/badge/Language-JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat-square" />
   <img src="https://img.shields.io/badge/Open%20Source-Lover-ff69b4?style=flat-square" />
   <img src="https://img.shields.io/badge/Style-活泼亮眼-ffbb00?style=flat-square" />
 </p>
@@ -17,6 +18,7 @@
 - 🐍 Python 狂热粉，热衷于用它解决实际问题
 - 💡 开源爱好者，乐于学习和分享
 - 🌱 正在成长为更好的开发者！
+- 🌏 语言：中文、英文、德语、日语
 
 ---
 
@@ -24,6 +26,7 @@
 
 <p>
   <img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=000" />
   <img src="https://img.shields.io/badge/-Markdown-000000?logo=markdown&logoColor=white" />
   <img src="https://img.shields.io/badge/-Git-181717?logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/-VS%20Code-007ACC?logo=visual-studio-code&logoColor=white" />
