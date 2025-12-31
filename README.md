@@ -40,15 +40,6 @@
 
 ---
 
-## 📈 我的 GitHub 数据
-
-<p>
-  <img src="https://github-readme-stats.vercel.app/api?username=lunina8403&show_icons=true&theme=radical" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lunina8403&theme=radical" width="48%" />
-</p>
-
----
-
 ## 🌟 近期关注
 
 - 🚀 欢迎和我一起参与开源项目
