@@ -1,1 +1,63 @@
-# Hi there 👋 Hello, I'm lunina8403! <p> <img src="https://img.shields.io/badge/Role-Student-34d058?style=flat-square" /> <img src="https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=fff&style=flat-square" /> <img src="https://img.shields.io/badge/Language-JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat-square" /> <img src="https://img.shields.io/badge/Open%20Source-Lover-ff69b4?style=flat-square" /> <img src="https://img.shields.io/badge/Style-Lively-ffbb00?style=flat-square" /> </p> --- ## 🏫 About Me - 🎓 A student who loves life and likes to explore the world with code - 🐍 Python enthusiast, passionate about solving real problems with it - 💡 Open source lover, happy to learn and share - 🌱 Growing to be a better developer! --- ## 🌐 Languages 中文 🇨🇳 | English 🇺🇸 | Deutsch 🇩🇪 | 日本語 🇯🇵 --- ## 💻 Skills <p> <img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=000" /> <img src="https://img.shields.io/badge/-Markdown-000000?logo=markdown&logoColor=white" /> <img src="https://img.shields.io/badge/-Git-181717?logo=git&logoColor=white" /> <img src="https://img.shields.io/badge/-VS%20Code-007ACC?logo=visual-studio-code&logoColor=white" /> <img src="https://img.shields.io/badge/-Open%20Source-3DA639?logo=github&logoColor=white" /> </p> --- ## 🌟 Recent Focus - 🚀 Welcome to join me in open source projects - 💬 Like to communicate about technology and share interesting ideas - 🌍 Looking forward to meeting more like-minded friends! --- ## 📫 Contact - 📧 Email: lunina275@gmail.com --- ## ✨ Signature > "A heart with a world of three thousand, be an ordinary person" 🌱 --- <p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=37B6FF&height=100&section=footer"/> </p>
+# Hi there 👋 Hello, I'm lunina8403!
+
+<p>
+  <img src="https://img.shields.io/badge/Role-Student-34d058?style=flat-square" />
+  <img src="https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=fff&style=flat-square" />
+  <img src="https://img.shields.io/badge/Language-JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat-square" />
+  <img src="https://img.shields.io/badge/Open%20Source-Lover-ff69b4?style=flat-square" />
+  <img src="https://img.shields.io/badge/Style-Lively-ffbb00?style=flat-square" />
+</p>
+
+---
+
+## 🏫 About Me
+
+- 🎓 A student who loves life and likes to explore the world with code
+- 🐍 Python enthusiast, passionate about solving real problems with it
+- 💡 Open source lover, happy to learn and share
+- 🌱 Growing to be a better developer!
+
+---
+
+## 🌐 Languages
+
+中文 🇨🇳 | English 🇺🇸 | Deutsch 🇩🇪 | 日本語 🇯🇵
+
+---
+
+## 💻 Skills
+
+<p>
+  <img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=000" />
+  <img src="https://img.shields.io/badge/-Markdown-000000?logo=markdown&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Git-181717?logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/-VS%20Code-007ACC?logo=visual-studio-code&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Open%20Source-3DA639?logo=github&logoColor=white" />
+</p>
+
+---
+
+## 🌟 Recent Focus
+
+- 🚀 Welcome to join me in open source projects
+- 💬 Like to communicate about technology and share interesting ideas
+- 🌍 Looking forward to meeting more like-minded friends!
+
+---
+
+## 📫 Contact
+
+- 📧 Email: lunina275@gmail.com
+
+---
+
+## ✨ Signature
+
+> "A heart with a world of three thousand, be an ordinary person" 🌱
+
+---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=37B6FF&height=100&section=footer"/>
+</p>
