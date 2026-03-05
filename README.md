@@ -1,33 +1,33 @@
- <img src="https://ryu-fellow.org/cms/wp-content/uploads/2020/05/Astronomy-1100x400.jpg" alt="cosmos banner" />
+<img src="https://ryu-fellow.org/cms/wp-content/uploads/2020/05/Astronomy-1100x400.jpg" alt="cosmos banner" />
 
-# Hi there 👋 你好，我是 lunina8403！
+# Hi there 👋 I'm lunina8403!
 
 <p>
   <img src="https://img.shields.io/badge/Role-Student-34d058?style=flat-square" />
   <img src="https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=fff&style=flat-square" />
   <img src="https://img.shields.io/badge/Language-JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat-square" />
   <img src="https://img.shields.io/badge/Open%20Source-Lover-ff69b4?style=flat-square" />
-  <img src="https://img.shields.io/badge/Style-活泼亮眼-ffbb00?style=flat-square" />
+  <img src="https://img.shields.io/badge/Style-Vibrant-ffbb00?style=flat-square" />
 </p>
 
 ---
 
 ## 🏫 About Me
 
-- 🎓 一名热爱生活的学生，喜欢用代码探索世界
-- 🐍 Python 狂热粉，热衷于用它解决实际问题
-- 💡 开源爱好者，乐于学习和分享
-- 🌱 正在成长为更好的开发者！
+- 🎓 A student who loves life and enjoys exploring the world through code
+- 🐍 Python enthusiast, passionate about solving real-world problems
+- 💡 Open source lover, eager to learn and share knowledge
+- 🌱 Growing to become a better developer!
 
 ---
 
-## 🌐 语言 / Languages
+## 🌐 Languages
 
-中文 🇨🇳 | English 🇺🇸 | Deutsch 🇩🇪 | 日本語 🇯🇵
+Chinese 🇨🇳 | English 🇺🇸 | Deutsch 🇩🇪 | 日本語 🇯🇵
 
 ---
 
-## 💻 技能标签
+## 💻 Skills
 
 <p>
   <img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white" />
@@ -40,23 +40,23 @@
 
 ---
 
-## 🌟 近期关注
+## 🌟 Recent Focus
 
-- 🚀 欢迎和我一起参与开源项目
-- 💬 喜欢交流技术、分享有趣的想法
-- 🌍 期待认识更多志同道合的小伙伴！
-
----
-
-## 📫 联系方式
-
-- 📧 邮箱：3806215449@qq.com
+- 🚀 Welcome to join me in open source projects
+- 💬 Love discussing technology and sharing interesting ideas
+- 🌍 Looking forward to meeting like-minded friends!
 
 ---
 
-## ✨ 个性签名
+## 📫 Contact
 
-> “心有三千大世界，做好一个平常人” 🌱
+- 📧 Email: 3806215449@qq.com
+
+---
+
+## ✨ Signature
+
+> "A mind holds a thousand worlds, be a simple and ordinary person" 🌱
 
 ---
 
