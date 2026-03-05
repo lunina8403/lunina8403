@@ -2,8 +2,6 @@
 
 # Hi there 👋 Hello, I'm lunina8403!
 
-# Hi there 👋 Hello, I'm lunina8403!
-
 <p>
   <img src="https://img.shields.io/badge/Role-Student-34d058?style=flat-square" />
   <img src="https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=fff&style=flat-square" />
