@@ -1,4 +1,4 @@
-name: V4 Dashboard Update
+name: V3 Dashboard Upgrade
 
 on:
   schedule:
@@ -12,98 +12,87 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # =========================
-      # FETCH GITHUB ACTIVITY
-      # =========================
+      # -------------------------
+      # 拉取 GitHub activity
+      # -------------------------
       - name: Fetch activity
         run: |
           USER=${{ github.repository_owner }}
           curl -s https://api.github.com/users/$USER/events/public > events.json
-
           python3 - <<EOF
 import json
-
 with open("events.json") as f:
     data = json.load(f)
-
 out = []
 for e in data[:6]:
     t = e["type"]
-    repo = e["repo"]["name"]
-    if t=="PushEvent":
-        t="push"
-    elif t=="CreateEvent":
-        t="create"
-    else:
-        t=t.replace("Event","")
-    out.append(f"- {t} @ {repo}")
-
+    r = e["repo"]["name"]
+    if t=="PushEvent": t="push"
+    elif t=="CreateEvent": t="create"
+    else: t=t.replace("Event","")
+    out.append(f"- {t} @ {r}")
 open("activity.txt","w").write("\n".join(out))
 EOF
 
-      # =========================
-      # SYSTEM / ENV / STATE / NET
-      # =========================
-      - name: Write static blocks
+      # -------------------------
+      # 写静态模块
+      # -------------------------
+      - name: Write blocks
         run: |
           cat > system.txt << EOF
-OS        Arch Linux
-WM        Hyprland
-Shell     zsh
-Editor    vim / neovim
-Status    stable
+OS        : Arch Linux
+WM        : Hyprland
+Shell     : zsh
+Editor    : vim / neovim
+State     : stable
 EOF
 
           cat > env.txt << EOF
-Mode      terminal-first
-Layout    dynamic tiling
-Focus     system / network tools
-Style     minimal rice
+Mode      : terminal-first
+Layout    : dynamic tiling
+Focus     : system/network tools
+Style     : minimal rice
 EOF
 
           cat > net.txt << EOF
-Internet    active
-Proxy       none
-Latency     normal
+Internet : active
+Proxy    : none
+Latency  : normal
 EOF
 
           cat > state.txt << EOF
-Session     active
-Input       keyboard-driven
-Workflow    manual
-Noise       minimal
+Session   : active
+Input     : keyboard-driven
+Workflow  : manual
+Noise     : minimal
 EOF
 
-      # =========================
-      # INJECT BLOCKS INTO README
-      # =========================
+      # -------------------------
+      # 注入 README
+      # -------------------------
       - name: Inject system
         run: |
           awk -v txt="$(cat system.txt)" '/<!--START_SYSTEM-->/ {print; print "```txt"; print txt; print "```"; next} {print}' README.md > tmp && mv tmp README.md
-
       - name: Inject env
         run: |
           awk -v txt="$(cat env.txt)" '/<!--START_ENV-->/ {print; print "```txt"; print txt; print "```"; next} {print}' README.md > tmp && mv tmp README.md
-
       - name: Inject activity
         run: |
           awk -v txt="$(cat activity.txt)" '/<!--START_ACTIVITY-->/ {print; print txt; next} {print}' README.md > tmp && mv tmp README.md
-
       - name: Inject network
         run: |
           awk -v txt="$(cat net.txt)" '/<!--START_NET-->/ {print; print "```txt"; print txt; print "```"; next} {print}' README.md > tmp && mv tmp README.md
-
       - name: Inject state
         run: |
           awk -v txt="$(cat state.txt)" '/<!--START_STATE-->/ {print; print "```txt"; print txt; print "```"; next} {print}' README.md > tmp && mv tmp README.md
 
-      # =========================
-      # COMMIT CHANGES
-      # =========================
+      # -------------------------
+      # 提交更新
+      # -------------------------
       - name: Commit
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add README.md
-          git commit -m "update V4 dashboard" || exit 0
+          git commit -m "update V3 dashboard upgrade" || exit 0
           git push
