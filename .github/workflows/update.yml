@@ -1,4 +1,4 @@
-name: System Dashboard V3
+name: V4 Dashboard Update
 
 on:
   schedule:
@@ -13,9 +13,9 @@ jobs:
       - uses: actions/checkout@v3
 
       # =========================
-      # FETCH REAL ACTIVITY
+      # FETCH GITHUB ACTIVITY
       # =========================
-      - name: Get GitHub activity
+      - name: Fetch activity
         run: |
           USER=${{ github.repository_owner }}
           curl -s https://api.github.com/users/$USER/events/public > events.json
@@ -30,94 +30,80 @@ out = []
 for e in data[:6]:
     t = e["type"]
     repo = e["repo"]["name"]
-
-    if t == "PushEvent":
-        msg = "push"
-    elif t == "CreateEvent":
-        msg = "create"
+    if t=="PushEvent":
+        t="push"
+    elif t=="CreateEvent":
+        t="create"
     else:
-        msg = t.replace("Event","")
-
-    out.append(f"- {msg} @ {repo}")
+        t=t.replace("Event","")
+    out.append(f"- {t} @ {repo}")
 
 open("activity.txt","w").write("\n".join(out))
 EOF
 
       # =========================
-      # SYSTEM BLOCK (STATIC)
+      # SYSTEM / ENV / STATE / NET
       # =========================
-      - name: System info
+      - name: Write static blocks
         run: |
           cat > system.txt << EOF
 OS        Arch Linux
 WM        Hyprland
 Shell     zsh
 Editor    vim / neovim
-State     stable
+Status    stable
 EOF
 
-      # =========================
-      # ENVIRONMENT SIGNAL
-      # =========================
-      - name: Environment
-        run: |
           cat > env.txt << EOF
-mode      terminal-first
-layout    dynamic tiling
-focus     system / network tools
-style     minimal rice
+Mode      terminal-first
+Layout    dynamic tiling
+Focus     system / network tools
+Style     minimal rice
 EOF
 
-      # =========================
-      # LOCAL STATE
-      # =========================
-      - name: State
-        run: |
+          cat > net.txt << EOF
+Internet    active
+Proxy       none
+Latency     normal
+EOF
+
           cat > state.txt << EOF
-session   active
-input     keyboard-driven
-workflow  manual control
-noise     minimal
+Session     active
+Input       keyboard-driven
+Workflow    manual
+Noise       minimal
 EOF
 
       # =========================
-      # INJECT FUNCTION
+      # INJECT BLOCKS INTO README
       # =========================
       - name: Inject system
         run: |
-          awk -v txt="$(cat system.txt)" '
-          /<!--START_SYSTEM-->/ {print; print "```txt"; print txt; print "```"; next}
-          {print}
-          ' README.md > tmp && mv tmp README.md
+          awk -v txt="$(cat system.txt)" '/<!--START_SYSTEM-->/ {print; print "```txt"; print txt; print "```"; next} {print}' README.md > tmp && mv tmp README.md
 
       - name: Inject env
         run: |
-          awk -v txt="$(cat env.txt)" '
-          /<!--START_ENV-->/ {print; print "```txt"; print txt; print "```"; next}
-          {print}
-          ' README.md > tmp && mv tmp README.md
+          awk -v txt="$(cat env.txt)" '/<!--START_ENV-->/ {print; print "```txt"; print txt; print "```"; next} {print}' README.md > tmp && mv tmp README.md
 
       - name: Inject activity
         run: |
-          awk -v txt="$(cat activity.txt)" '
-          /<!--START_ACTIVITY-->/ {print; print txt; next}
-          {print}
-          ' README.md > tmp && mv tmp README.md
+          awk -v txt="$(cat activity.txt)" '/<!--START_ACTIVITY-->/ {print; print txt; next} {print}' README.md > tmp && mv tmp README.md
+
+      - name: Inject network
+        run: |
+          awk -v txt="$(cat net.txt)" '/<!--START_NET-->/ {print; print "```txt"; print txt; print "```"; next} {print}' README.md > tmp && mv tmp README.md
 
       - name: Inject state
         run: |
-          awk -v txt="$(cat state.txt)" '
-          /<!--START_STATE-->/ {print; print "```txt"; print txt; print "```"; next}
-          {print}
-          ' README.md > tmp && mv tmp README.md
+          awk -v txt="$(cat state.txt)" '/<!--START_STATE-->/ {print; print "```txt"; print txt; print "```"; next} {print}' README.md > tmp && mv tmp README.md
 
       # =========================
-      # COMMIT
+      # COMMIT CHANGES
       # =========================
       - name: Commit
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add README.md
-          git commit -m "update system dashboard v3" || exit 0
+          git commit -m "update V4 dashboard" || exit 0
           git push
