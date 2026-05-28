@@ -1,0 +1,123 @@
+name: System Dashboard V3
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      # =========================
+      # FETCH REAL ACTIVITY
+      # =========================
+      - name: Get GitHub activity
+        run: |
+          USER=${{ github.repository_owner }}
+          curl -s https://api.github.com/users/$USER/events/public > events.json
+
+          python3 - <<EOF
+import json
+
+with open("events.json") as f:
+    data = json.load(f)
+
+out = []
+for e in data[:6]:
+    t = e["type"]
+    repo = e["repo"]["name"]
+
+    if t == "PushEvent":
+        msg = "push"
+    elif t == "CreateEvent":
+        msg = "create"
+    else:
+        msg = t.replace("Event","")
+
+    out.append(f"- {msg} @ {repo}")
+
+open("activity.txt","w").write("\n".join(out))
+EOF
+
+      # =========================
+      # SYSTEM BLOCK (STATIC)
+      # =========================
+      - name: System info
+        run: |
+          cat > system.txt << EOF
+OS        Arch Linux
+WM        Hyprland
+Shell     zsh
+Editor    vim / neovim
+State     stable
+EOF
+
+      # =========================
+      # ENVIRONMENT SIGNAL
+      # =========================
+      - name: Environment
+        run: |
+          cat > env.txt << EOF
+mode      terminal-first
+layout    dynamic tiling
+focus     system / network tools
+style     minimal rice
+EOF
+
+      # =========================
+      # LOCAL STATE
+      # =========================
+      - name: State
+        run: |
+          cat > state.txt << EOF
+session   active
+input     keyboard-driven
+workflow  manual control
+noise     minimal
+EOF
+
+      # =========================
+      # INJECT FUNCTION
+      # =========================
+      - name: Inject system
+        run: |
+          awk -v txt="$(cat system.txt)" '
+          /<!--START_SYSTEM-->/ {print; print "```txt"; print txt; print "```"; next}
+          {print}
+          ' README.md > tmp && mv tmp README.md
+
+      - name: Inject env
+        run: |
+          awk -v txt="$(cat env.txt)" '
+          /<!--START_ENV-->/ {print; print "```txt"; print txt; print "```"; next}
+          {print}
+          ' README.md > tmp && mv tmp README.md
+
+      - name: Inject activity
+        run: |
+          awk -v txt="$(cat activity.txt)" '
+          /<!--START_ACTIVITY-->/ {print; print txt; next}
+          {print}
+          ' README.md > tmp && mv tmp README.md
+
+      - name: Inject state
+        run: |
+          awk -v txt="$(cat state.txt)" '
+          /<!--START_STATE-->/ {print; print "```txt"; print txt; print "```"; next}
+          {print}
+          ' README.md > tmp && mv tmp README.md
+
+      # =========================
+      # COMMIT
+      # =========================
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add README.md
+          git commit -m "update system dashboard v3" || exit 0
+          git push
