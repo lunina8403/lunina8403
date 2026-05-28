@@ -2,13 +2,13 @@
 
 # 𝐒𝐞𝐫𝐢𝐤𝐚
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=2600&color=8B949E&center=true&vCenter=true&width=520&lines=arch+linux+environment;hyprland+session+active;dotfiles-driven+workflow;minimal+system+interference" />
+<img src="https://readme-typing-svg.demolab.com/demo?font=Fira+Code&size=14&pause=2000&color=8B949E&center=true&vCenter=true&width=550&lines=arch+linux+environment;hyprland+session;dotfiles-driven;terminal-first+workflow" />
 
 </div>
 
 ---
 
-## SYSTEM
+## 🖥 SYSTEM DASHBOARD
 
 <!--START_SYSTEM-->
 ```txt
@@ -16,26 +16,26 @@ OS        Arch Linux
 WM        Hyprland
 Shell     zsh
 Editor    vim / neovim
-State     stable
+Status    stable
 ```
 <!--END_SYSTEM-->
 
 ---
 
-## ENVIRONMENT SIGNAL
+## 🛠 ENVIRONMENT
 
 <!--START_ENV-->
 ```txt
-mode      terminal-first
-layout    dynamic tiling
-focus     system / network tools
-style     minimal rice
+Mode      terminal-first
+Layout    dynamic tiling
+Focus     system / network tools
+Style     minimal rice
 ```
 <!--END_ENV-->
 
 ---
 
-## ACTIVITY STREAM
+## 🔄 ACTIVITY STREAM
 
 <!--START_ACTIVITY-->
 loading activity...
@@ -43,14 +43,26 @@ loading activity...
 
 ---
 
-## LOCAL STATE
+## 🌐 NETWORK STATUS
+
+<!--START_NET-->
+```txt
+Internet    active
+Proxy       none
+Latency     normal
+```
+<!--END_NET-->
+
+---
+
+## 💡 LOCAL STATE
 
 <!--START_STATE-->
 ```txt
-session   active
-input     keyboard-driven
-workflow  manual control
-noise     minimal
+Session     active
+Input       keyboard-driven
+Workflow    manual
+Noise       minimal
 ```
 <!--END_STATE-->
 
