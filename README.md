@@ -2,7 +2,7 @@
 
 # 𝐒𝐞𝐫𝐢𝐤𝐚
 
-<img src="https://readme-typing-svg.demolab.com/demo?font=Fira+Code&size=15&pause=2000&color=8B949E&center=true&vCenter=true&width=600&lines=arch+linux+environment;hyprland+session;dotfiles-driven+workflow;terminal-first+setup" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=2000&color=8B949E&center=true&vCenter=true&width=600&lines=arch+linux+environment;hyprland+session;dotfiles-driven+workflow;terminal-first+setup" />
 
 </div>
 
