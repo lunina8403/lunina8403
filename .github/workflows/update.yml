@@ -1,59 +1,62 @@
-name: Dashboard Update
+name: V3 Dashboard Update
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
 
 jobs:
   update:
     runs-on: ubuntu-latest
 
     steps:
-      # -------------------------
-      # Checkout repository
-      # -------------------------
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v3
 
-      # -------------------------
-      # Fetch / simulate activity
-      # -------------------------
-      - name: Fetch activity
+      # =========================
+      # build activity block (SAFE)
+      # =========================
+      - name: Build activity block
         run: |
-          # 写入简单的活动信息到 activity.txt
-          echo "- system running" > activity.txt
+          echo "<!--START_ACTIVITY-->" > activity.txt
+          echo "- system running" >> activity.txt
           echo "- hyprland session active" >> activity.txt
           echo "- arch linux environment" >> activity.txt
           echo "- dotfiles-driven workflow online" >> activity.txt
           echo "- vim & terminal focused" >> activity.txt
+          echo "<!--END_ACTIVITY-->" >> activity.txt
 
-      # -------------------------
-      # Inject activity into README
-      # -------------------------
+      # =========================
+      # inject into README (SAFE REPLACE)
+      # =========================
       - name: Inject activity
         run: |
-          echo "<!--START_ACTIVITY-->" > activity_block.txt
-          echo "- system running" >> activity_block.txt
-          echo "- hyprland session active" >> activity_block.txt
-          echo "- arch linux environment" >> activity_block.txt
-          echo "- dotfiles-driven workflow online" >> activity_block.txt
-          echo "- vim & terminal focused" >> activity_block.txt
-          echo "<!--END_ACTIVITY-->" >> activity_block.txt
-          
-          # 替换 README.md 中的占位符
-          sed -i '/<!--START_ACTIVITY-->/,/<!--END_ACTIVITY-->/{
-            r activity_block.txt
-            d
-          }' README.md
+          awk '
+          /<!--START_ACTIVITY-->/ {
+            print;
+            while ((getline line < "activity.txt") > 0) {
+              print line
+            }
+            skip=1
+            next
+          }
+          /<!--END_ACTIVITY-->/ {
+            skip=0
+            print
+            next
+          }
+          skip==1 { next }
+          { print }
+          ' README.md > tmp.md && mv tmp.md README.md
 
-          rm activity_block.txt
-
-      # -------------------------
-      # Commit changes
-      # -------------------------
-      - name: Commit changes
+      # =========================
+      # commit
+      # =========================
+      - name: Commit
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
+
           git add README.md activity.txt
           git commit -m "update dashboard" || exit 0
           git push
