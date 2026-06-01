@@ -1,6 +1,6 @@
 <div align="center">
 
-# 𝐒𝐞𝐫𝐢𝐤𝐚
+# 𝒮𝑒𝓇𝒊𝓀𝒶
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=2000&color=8B949E&center=true&vCenter=true&width=600&lines=arch+linux+environment;hyprland+session;dotfiles-driven+workflow;terminal-first+setup" />
 
