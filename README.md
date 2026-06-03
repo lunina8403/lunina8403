@@ -16,7 +16,7 @@ OS        : Arch Linux x86_64
 Kernel    : Linux 6.12.1-arch1-1
 WM        : Hyprland (wayland-session)
 Shell     : zsh 5.9 (omz)
-Editor    : Vim / NeoVim
+Editor    : Neovim (Remote) / VS Code
 Uptime    : up 4 hours, 20 minutes
 ```
 <!--END_SYSTEM-->
@@ -41,7 +41,11 @@ Auth      : polkit-kde-agent
 ## 📊 SYSTEM LOGS
 
 <!--START_ACTIVITY-->
-[paru] Syncing AUR database...
+```txt
+ [sys-init] Loading environment variables...
+ [paru-daemon] Syncing AUR database... [=========>----] 68%
+ [paru-daemon] Refreshing local package mirrors [OK]
+```
 <!--END_ACTIVITY-->
 
 ---
