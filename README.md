@@ -16,7 +16,7 @@ OS        : Arch Linux x86_64
 Kernel    : Linux 6.12.1-arch1-1
 WM        : Hyprland (wayland-session)
 Shell     : zsh 5.9 (omz)
-Editor    : Neovim v0.10.0 (LazyVim)
+Editor    : Vim / NeoVim
 Uptime    : up 4 hours, 20 minutes
 ```
 <!--END_SYSTEM-->
@@ -32,16 +32,16 @@ Multiplex : tmux
 FileMngr  : yazi / ranger
 Launcher  : rofi-wayland
 Bar       : waybar
-Auth      : polkit-kde-agente
+Auth      : polkit-kde-agent
 ```
 <!--END_ENV-->
 
 ---
 
-## 🔄 ACTIVITY STREAM
+## 📊 SYSTEM LOGS
 
 <!--START_ACTIVITY-->
-loading activity...
+[paru] Syncing AUR database...
 <!--END_ACTIVITY-->
 
 ---
@@ -51,10 +51,10 @@ loading activity...
 <!--START_NET-->
 ```txt
 Interface : wlan0 (802.11ax)
-Core      : sing-box / v2rayA
-Routing   : rule-based (bypass-mainland)
-TunMode   : fake-ip (dns-hijack)
-Outbound  : Cloudflare-Tunnel / VPS-Relay
+Type      : dual-stack (IPv4/IPv6)
+Routing   : policy-based (split-tunnel)
+DNS-Core  : encrypted (DoH/DoT)
+Gateway   : secure-relay (upstream)
 ```
 <!--END_NET-->
 
