@@ -12,11 +12,12 @@
 
 <!--START_SYSTEM-->
 ```txt
-OS        : Arch Linux
-WM        : Hyprland
-Shell     : zsh
-Editor    : vim / neovim
-State     : stable
+OS        : Arch Linux x86_64
+Kernel    : Linux 6.12.1-arch1-1
+WM        : Hyprland (wayland-session)
+Shell     : zsh 5.9 (omz)
+Editor    : Neovim v0.10.0 (LazyVim)
+Uptime    : up 4 hours, 20 minutes
 ```
 <!--END_SYSTEM-->
 
@@ -26,10 +27,12 @@ State     : stable
 
 <!--START_ENV-->
 ```txt
-Mode      : terminal-first
-Layout    : dynamic tiling
-Focus     : system / network tools
-Style     : minimal rice
+Terminal  : kitty / alacritty
+Multiplex : tmux
+FileMngr  : yazi / ranger
+Launcher  : rofi-wayland
+Bar       : waybar
+Auth      : polkit-kde-agente
 ```
 <!--END_ENV-->
 
@@ -47,9 +50,11 @@ loading activity...
 
 <!--START_NET-->
 ```txt
-Internet : active
-Proxy    : none
-Latency  : normal
+Interface : wlan0 (802.11ax)
+Core      : sing-box / v2rayA
+Routing   : rule-based (bypass-mainland)
+TunMode   : fake-ip (dns-hijack)
+Outbound  : Cloudflare-Tunnel / VPS-Relay
 ```
 <!--END_NET-->
 
@@ -59,10 +64,10 @@ Latency  : normal
 
 <!--START_STATE-->
 ```txt
-Session   : active
-Input     : keyboard-driven
-Workflow  : manual
-Noise     : minimal
+Session   : locked (swaylock-effects)
+AuthType  : fido2 / pam-biometric
+Security  : ufw-hardened
+Backup    : rsync-cronjob (idle)
 ```
 <!--END_STATE-->
 
