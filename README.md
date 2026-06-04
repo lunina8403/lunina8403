@@ -1,4 +1,4 @@
-[🏠 Runtime](./README.md) • [📚 Stack](./README_STACK.md)
+[🏠 Runtime](./README.md) • [📚 Technical Taxonomy](./README_STACK.md)
 
 ---
 <div align="center">

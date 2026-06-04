@@ -1,30 +1,30 @@
-[🏠 Runtime](./README.md) • [📚 Stack (Active)](./README_STACK.md)
+[🏠 Runtime](./README.md) • [📚 Technical Taxonomy (Active)](./README_STACK.md)
 
 ---
 
-# Standard Stack Profile
+# Standard Technical Taxonomy Profile
 
 Infrastructure researcher exploring kernel internals, virtualization, and production-grade networking architecture.
 
 ---
 
-## 🛠 Technology Stack
+## 🛠 Technical Taxonomy
 
 ### Languages & Runtimes
-- **Systems Programming**: Rust / C
+- **Systems Programming**: Rust [Safe/Unsafe] / ISO C [C11/C17]
 - **Scripting & Automation**: Python / Bash / POSIX shell
 - **Web/Application Layer**: JavaScript / TypeScript
 
 ### Infrastructure & Orchestration
-- **Containerization**: Docker / OCI container runtimes
+- **Containerization**: OCI runtimes / OCI container runtimes
 - **System Management**: systemd / systemd-nspawn / namespaces
 - **Process Supervision**: tmux / terminal multiplexing / process management
 - **Package Ecosystems**: Pacman (Arch Linux) / Nix package manager
 
-### Network & Telemetry
-- **Infrastructure Monitoring**: system telemetry, performance diagnostics, sysstat
+### Network & Observability
+- **Kernel trace telemetry**: deterministic performance diagnostics, sysstat, observability
 - **Network Stack Research**: protocol analysis, policy-based routing, DNS encryption (DoH/DoT)
-- **Cloud Infrastructure**: VPS optimization, remote environment management, infrastructure-as-code
+- **Cloud Infrastructure**: VPS optimization, ephemeral compute patterns, infrastructure-as-code
 
 ### Development & Build Systems
 - **Version Control**: Git workflows, repository management at scale
@@ -43,15 +43,15 @@ Infrastructure researcher exploring kernel internals, virtualization, and produc
 - NixOS declarative configuration (experimental research)
 
 ### Virtualization & Container Technology
-- Container isolation: namespaces, cgroups, seccomp profiles
+- Container isolation: namespaces, cgroups v2, seccomp profiles
 - Virtual machine architectures and hypervisor models
 - Hypervisor resource allocation and overcommitment strategies
-- Application containerization patterns and orchestration
+- Application containerization patterns and ephemeral orchestration
 
 ### Network Infrastructure & Security
 - Advanced routing: policy-based routing, split-tunneling, multi-path networking
 - DNS infrastructure and encrypted resolution protocols (DoH/DoT)
-- VPS provisioning and configuration optimization
+- VPS provisioning and deterministic optimization
 - Network segmentation and firewall policies
 
 ### Infrastructure Automation & DevOps
