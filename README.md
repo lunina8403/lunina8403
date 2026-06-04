@@ -44,11 +44,14 @@ Auth      : polkit-kde-agent
 ## 📊 Dashboard Heartbeat
 
 <!--START_ACTIVITY-->
+<!--START_ACTIVITY-->
 ```txt
- [dashboard] Ready for workflow updates
- [orchestration] CI pipeline enabled
- [status] Monitoring active
+ [dashboard] Last update: 2026-06-04 14:27 UTC
+ [workflow] Run ID: 26958168629
+ [trigger] Event: schedule
+ [runner] Linux (X64)
 ```
+<!--END_ACTIVITY-->
 <!--END_ACTIVITY-->
 
 ---
