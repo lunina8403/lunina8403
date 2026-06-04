@@ -4,7 +4,8 @@
 
 # Standard Technical Taxonomy Profile
 
-Infrastructure researcher exploring kernel internals, virtualization, and production-grade networking architecture.
+Infrastructure enthusiast exploring kernel internals, container isolation, and systems optimization.
+Self-taught foundation through Arch Linux, Rust, and open-source infrastructure tooling.
 
 ---
 
