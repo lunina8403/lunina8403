@@ -1,0 +1,26 @@
+# Normalize text files across platforms
+* text=auto
+
+# Force LF for documentation and shell scripts
+*.md text eol=lf
+*.markdown text eol=lf
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+
+# Keep binary files unchanged
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+
+# Ensure config and manifest files are normalized
+*.toml text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.xml text eol=lf
+*.ini text eol=lf
+*.conf text eol=lf
