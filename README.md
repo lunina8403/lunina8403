@@ -1,4 +1,4 @@
-[ Profile: Custom Runtime Environment (Active) ] ── [ Switch: Standard Stack Profile ](./README_STACK.md)
+[🏠 Runtime](./README.md) • [📚 Stack](./README_STACK.md)
 
 ---
 <div align="center">

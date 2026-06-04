@@ -1,45 +1,75 @@
-[ Switch: Custom Runtime Environment ](./README.md) ── [ Profile: Standard Stack Profile (Active) ]
+[🏠 Runtime](./README.md) • [📚 Stack (Active)](./README_STACK.md)
 
 ---
 
-# Serika
-Student & Linux enthusiast exploring systems, tooling, and terminal-first workflows.
+# Standard Stack Profile
+
+Infrastructure researcher exploring kernel internals, virtualization, and production-grade networking architecture.
 
 ---
 
-## 🖥 Environment
-- OS: Arch Linux / NixOS (experimental)
-- WM: Hyprland
-- Shell: zsh / fish / bash
-- Terminal: Kitty / Alacritty / foot
-- Editor: Vim / Neovim / VS Code / Emacs (light use)
+## 🛠 Technology Stack
+
+### Languages & Runtimes
+- **Systems Programming**: Rust / C
+- **Scripting & Automation**: Python / Bash / POSIX shell
+- **Web/Application Layer**: JavaScript / TypeScript
+
+### Infrastructure & Orchestration
+- **Containerization**: Docker / OCI container runtimes
+- **System Management**: systemd / systemd-nspawn / namespaces
+- **Process Supervision**: tmux / terminal multiplexing / process management
+- **Package Ecosystems**: Pacman (Arch Linux) / Nix package manager
+
+### Network & Telemetry
+- **Infrastructure Monitoring**: system telemetry, performance diagnostics, sysstat
+- **Network Stack Research**: protocol analysis, policy-based routing, DNS encryption (DoH/DoT)
+- **Cloud Infrastructure**: VPS optimization, remote environment management, infrastructure-as-code
+
+### Development & Build Systems
+- **Version Control**: Git workflows, repository management at scale
+- **Build Toolchains**: make, Cargo, compiler chains
+- **Editor Infrastructure**: Neovim LSP / VS Code language extensions
 
 ---
 
-## 💻 Focus Areas
-- Linux system internals & customization
-- Dotfiles-driven workflows
-- Networking experiments & monitoring
-- Terminal-based productivity
-- Scripting automation (bash/python)
+## 📊 Research Domains
+
+### Linux Systems & Kernel
+- Arch Linux distribution architecture and build systems
+- Kernel subsystems: scheduling, memory management, I/O subsystems
+- Boot processes and early userspace initialization
+- SystemD ecosystem: service management, socket activation, user sessions
+- NixOS declarative configuration (experimental research)
+
+### Virtualization & Container Technology
+- Container isolation: namespaces, cgroups, seccomp profiles
+- Virtual machine architectures and hypervisor models
+- Hypervisor resource allocation and overcommitment strategies
+- Application containerization patterns and orchestration
+
+### Network Infrastructure & Security
+- Advanced routing: policy-based routing, split-tunneling, multi-path networking
+- DNS infrastructure and encrypted resolution protocols (DoH/DoT)
+- VPS provisioning and configuration optimization
+- Network segmentation and firewall policies
+
+### Infrastructure Automation & DevOps
+- Dotfiles-driven configuration management
+- Infrastructure-as-code principles and implementation
+- Automated deployment and environment reproducibility
+- Shell scripting for systems administration
 
 ---
 
-## 🛠 Tech Stack
-- Languages: Python / JavaScript / C / Rust
-- Tools: Git / Docker / systemd / tmux
-- Skills: shell scripting, package management, automation
-- Version control & CI/CD practices
+## 🔬 Current Research Focus
+
+- Linux kernel internals and performance optimization
+- Wayland display server protocols (Hyprland compositor implementation)
+- Advanced Neovim plugin architecture and language server protocols
+- Network infrastructure monitoring and real-time analytics
+- Production-grade reliability patterns and observability
 
 ---
 
-## 🌱 Currently Learning
-- Advanced Linux kernel concepts
-- Hyprland workspace optimization
-- Vim/Neovim plugin ecosystem
-- Workflow automation & scripts
-- Networking monitoring tools
-
----
-
-> terminal-first · manual control · minimal but functional
+> infrastructure-first · deep systems research · production-oriented thinking
