@@ -1,6 +1,5 @@
 [🏠 Runtime](./README.md) • [📚 Technical Taxonomy](./README_STACK.md)
 
----
 <div align="center">
 
 # 𝙎𝙚𝙧𝙞𝙠𝙖
